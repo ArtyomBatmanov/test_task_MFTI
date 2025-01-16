@@ -15,7 +15,7 @@ def bar(x):
     b = a
     return a, b, x + 1
 Ожидаемый результат:
-- def foo(a, b, c, d):
+def foo(a, b, c, d):
     v0 = -a
     v1 = a - b
     v2 = c ** v1
@@ -23,7 +23,7 @@ def bar(x):
     v4 = baz(v0, v3, k=A + 123) # ast.keyword оставить без изменений
     return v4
 
-- def bar(x):
+def bar(x):
     v0 = x * 2
     v1 = sin(x)
     v2 = v0 + v1
